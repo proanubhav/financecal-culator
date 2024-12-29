@@ -52,7 +52,7 @@ function CalculatorForm() {
                                     <div className="form-style-one with-border">
                                         {["Monthly Investment", "Annual Step Up", "Expected Return Rate", "Investment Period"].map((label, idx) => {
                                             const setValue = [setMonthlyInvestment, setAnnualStepUP, setExpectdReturnRate, setInvestmentPeriod][idx];
-                                            const placeholder = ["₹10000", "12%", "10%", "10 Yr"][idx];
+                                            const placeholder = ["₹10000", "10%", "12%", "10 Yr"][idx];
                                             const value = [monthlyInvestment, annualStepUP, expectdReturnRate, investmentPeriod][idx];
                                             return (
                                                 <div className="row controls" key={label}>
@@ -93,7 +93,7 @@ function CalculatorForm() {
                                                         <tr key={index}>
                                                             <td>{item.year}</td>
                                                             <td>{item.investedAmount}</td>
-                                                            <td>{item.resultantAmount}</td>
+                                                            <td>{item.maturityAmount}</td>
                                                         </tr>
                                                     ))}
                                                 </tbody>
